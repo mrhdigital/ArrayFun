@@ -33,6 +33,11 @@ const inventors = [
       }
   });
   console.table(fifteen);
+  var obj = JSON.stringify(fifteen);
+ // JSON.parse(JSON.stringify(userData))
+
+  document.getElementById("demo1").innerHTML = obj;
+
 
   // Array.prototype.map()
   // 2. Give us an array of the inventors' first and last names
