@@ -56,6 +56,10 @@ const inventors = [
   // 2. Give us an array of the inventors' first and last names
 //const inventorsNames = inventors.map(names => names.first + ' '+ names.last);
 const inventorsNames = inventors.map(names => `${names.first}  ${names.last}`);
+var inventorsNamesString = JSON.stringify(inventorsNames);
+function mapFunction() {
+    document.getElementById("map").innerHTML = inventorsNamesString;
+  }
 
 console.table(inventorsNames);
   // Array.prototype.sort()
