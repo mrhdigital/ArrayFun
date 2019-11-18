@@ -28,11 +28,14 @@ const inventors = [
   // Array.prototype.filter()
   // 1. Filter the list of inventors for those who were born in the 1500's
 // The filter() method creates a new array with all the elements that pass test implemented by the provided fuction
+
+
 //   const fifteen = inventors.filter(function(inventor){
 //       if(inventor.year >= 1500 && inventor.year < 1600){
 //           return true;
 //       }
 //   });
+
 // Replaced the above code with arrow function.
   const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
   //return true;
@@ -40,8 +43,13 @@ const inventors = [
   //create JSON string from a javaScript object by using stringify() method.
   var obj = JSON.stringify(fifteen);
  // JSON.parse(JSON.stringify(userData))
+ var obj1 = JSON.stringify(inventors);
+ document.getElementById("demo1").innerHTML = obj1;
 
-  document.getElementById("demo1").innerHTML = obj;
+ function filterFunction() {
+    document.getElementById("demo2").innerHTML = obj;
+  }
+
 
 
   // Array.prototype.map()
