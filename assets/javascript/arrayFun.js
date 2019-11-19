@@ -73,6 +73,12 @@ console.table(inventorsNames);
 //     }
 // });
 const ordered = inventors.sort((a,b) => a.year > b.year ? 1 : -1)
+
+var orderedString = JSON.stringify(ordered);
+function sortFunction() {
+    document.getElementById("sort").innerHTML = orderedString;
+  }
+
 console.table(ordered);
   // Array.prototype.reduce()
   // 4. How many years did all the inventors live?
