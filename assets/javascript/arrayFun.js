@@ -136,7 +136,7 @@ console.log(totalYears);
   console.log(transportation);
 
 
-  const people = [
+  const people1 = [
     { name: 'Wes', year: 1988 },
     { name: 'Kait', year: 1986 },
     { name: 'Irv', year: 1970 },
@@ -153,7 +153,17 @@ console.log(totalYears);
 
   // Some and Every Checks
   // Array.prototype.some() // is at least one person 19 or older?
-  // Array.prototype.every() // is everyone 19 or older?
+  // Array.prototype.some() // is at least one person 19?
+    // const isAdult = people.some(function(person) {
+    //   const currentYear = (new Date()).getFullYear();
+    //   if(currentYear - person.year >= 19) {
+    //     return true;
+    //   }
+    // });
+
+    const isAdult = people1.some(person => ((new Date()).getFullYear()) - person.year >= 19);
+
+    console.log({isAdult});
 
   // Array.prototype.find()
   // Find is like filter, but instead returns just the one you are looking for
