@@ -197,6 +197,11 @@ const newComments = [
   ...comments.slice(index + 1)
 ];
 
+var newCommentsString = JSON.stringify(newComments);
+function deleteFunction() {
+  document.getElementById("delete").innerHTML = newCommentsString;
+}
+
 console.table(newComments);
 
 
