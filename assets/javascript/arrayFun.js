@@ -204,8 +204,12 @@ function deleteFunction() {
 
 console.table(newComments);
 
+const pressed =[];
+const secretCode = 'mrh'
 window.addEventListener('keyup', (e) => {
   console.log(e.key);
+  pressed.push(e.key);
+  console.log(pressed);
 })
 
 
