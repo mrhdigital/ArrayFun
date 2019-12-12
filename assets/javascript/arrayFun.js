@@ -204,5 +204,10 @@ function deleteFunction() {
 
 console.table(newComments);
 
+window.addEventListener('keyup', (e) => {
+  console.log(e.key);
+})
+
+
 
 
