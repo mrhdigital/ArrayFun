@@ -78,7 +78,12 @@ const john = {
     }
 }
 console.clear();
+
+const dev = Object.assign({},john);
 console.log(john);
+const dev2 = JSON.parse(JSON.stringify(john));
+
+
   </script>
 
 </body>
