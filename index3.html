@@ -78,11 +78,13 @@
         }
 
         function toggleDone(e) {
+            console.log(e);
 
         }
 
 
         addItems.addEventListener('submit', addItem);
+        itemsList.addEventListener('click', toggleDone);
 
         // const checkBoxes = document.querySelectorAll('input');
         // checkBoxes.forEach(input => input.addEventListener('click',() => alert('hi')));
