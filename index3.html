@@ -78,7 +78,9 @@
         }
 
         function toggleDone(e) {
-            console.log(e);
+            //console.log(e);
+            if(!e.target.matches('input')) return;// skip this unless it's an input
+            console.log(e.target);
 
         }
 
